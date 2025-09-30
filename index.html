@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdullah Suwailem - Card</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap');
+        
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background: linear-gradient(135deg, #8aba24 0%, #00a3df 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .card-container {
+            max-width: 500px;
+            width: 100%;
+        }
+        
+        .professional-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .professional-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .card-header-custom {
+            background: linear-gradient(135deg, #777777 0%, #adadad 100%);
+            padding: 40px 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .card-header-custom::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .profile-icon {
+            width: 100px;
+            height: 100px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            position: relative;
+        }
+        
+        .profile-icon i {
+            font-size: 50px;
+            color: #00a3df;
+        }
+        
+        .name {
+            color: white;
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0;
+            position: relative;
+        }
+        
+        .company {
+            color: rgba(255,255,255,0.9);
+            font-size: 16px;
+            margin-top: 5px;
+            position: relative;
+        }
+        
+        .card-body-custom {
+            padding: 30px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            margin-bottom: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .contact-item:hover {
+            background: #e9ecef;
+            transform: translateX(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .contact-icon {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, #8abe24 0%, #00a3df 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 15px;
+            flex-shrink: 0;
+        }
+        
+        .contact-icon i {
+            color: white;
+            font-size: 20px;
+        }
+        
+        .contact-info {
+            flex: 1;
+        }
+        
+        .contact-label {
+            font-size: 12px;
+            color: #6c757d;
+            font-weight: 500;
+            margin-bottom: 3px;
+        }
+        
+        .contact-value {
+            font-size: 15px;
+            color: #2c3e50;
+            font-weight: 500;
+            word-break: break-all;
+        }
+        
+        .aramco-logo {
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+            border-top: 2px solid #e9ecef;
+        }
+        
+        .aramco-logo img {
+            max-width: 150px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="professional-card">
+            <div class="card-header-custom">
+                <div class="profile-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h1 class="name">عبدالله صالح السويلم</h1>
+                <p class="company">Abdullah S. Alsuwailem</p>
+            </div>
+            
+            <div class="card-body-custom">
+                <a href="tel:+966138730164" class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-label">الهاتف - Phone</div>
+                        <div class="contact-value" dir="ltr">+966 13 873 0164</div>
+                    </div>
+                </a>
+                
+                <a href="tel:+966506863028" class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-label">الجوال - Mobile</div>
+                        <div class="contact-value" dir="ltr">+966 50 686 3028</div>
+                    </div>
+                </a>
+                
+                <a href="mailto:Abullah.suwailem.1@aramco.com" class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-label">البريد الإلكتروني - Email</div>
+                        <div class="contact-value" dir="ltr">Abullah.suwailem.1@aramco.com</div>
+                    </div>
+                </a>
+                
+                <a href="https://maps.apple.com/?address=Dhahran,%20Saudi%20Arabia&auid=17703370069921962419&ll=26.307525,50.134316&lsp=6489&q=Dhahran&t=m" target="_blank" class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-label">العنوان - Address</div>
+                        <div class="contact-value">الظهران، المملكة العربية السعودية</div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="aramco-logo">
+                <svg width="150" height="40" viewBox="0 0 150 40" xmlns="http://www.w3.org/2000/svg">
+                </svg>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
